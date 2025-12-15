@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Online Art Classes for Kids | 1:1 Personal Training</title>
 
     <!-- SEO -->
-    <meta name="description" content="Online 1:1 art classes for kids. Sketching, watercolor and portraits. First class free. Limited seats.">
-    <meta name="keywords" content="online art classes for kids, drawing classes, watercolor, sketching">
+    <meta name="description" content="Online 1:1 art classes for kids. Sketching, watercolor and portraits. First class free. Limited seats for better attention.">
+    <meta name="keywords" content="online art classes for kids, drawing classes, watercolor, sketching, art teacher">
 
     <style>
         body {
@@ -24,7 +25,7 @@
         }
 
         .card {
-            background: #fff;
+            background: #ffffff;
             padding: 30px;
             border-radius: 14px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -76,7 +77,7 @@
             margin: 12px 8px;
             padding: 14px 22px;
             background: #25d366;
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             border-radius: 8px;
             font-size: 16px;
@@ -87,9 +88,13 @@
             background: #e1306c;
         }
 
+        .btn:hover {
+            opacity: 0.9;
+        }
+
         /* Gallery */
         .gallery {
-            margin-top: 40px;
+            margin-top: 45px;
         }
 
         .gallery h3 {
@@ -106,15 +111,66 @@
 
         .gallery-grid img {
             width: 100%;
-            height: 280px;
+            height: 260px;
             object-fit: cover;
             border-radius: 12px;
             box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
 
+        /* Testimonials */
+        .testimonials {
+            margin-top: 55px;
+            text-align: center;
+        }
+
+        .testimonials h3 {
+            color: #444;
+            margin-bottom: 25px;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .testimonial-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            font-style: italic;
+        }
+
+        .testimonial-card span {
+            display: block;
+            margin-top: 12px;
+            font-style: normal;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .google-review {
+            margin-top: 30px;
+        }
+
+        .google-review a {
+            display: inline-block;
+            padding: 14px 24px;
+            background: #4285F4;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .google-review a:hover {
+            opacity: 0.9;
+        }
+
         footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 45px;
             font-size: 14px;
             color: #777;
         }
@@ -123,6 +179,8 @@
 
 <body>
     <div class="container">
+
+        <!-- Hero Section -->
         <div class="card">
             <h1>ONLINE ART CLASSES (1:1 for Kids)</h1>
             <h2>Sketching | Watercolor | Portraits</h2>
@@ -148,19 +206,51 @@
             </a>
         </div>
 
-        <!-- Gallery Section -->
+        <!-- Gallery Section (Optional) -->
         <div class="gallery">
             <h3>Student Work & Class Moments</h3>
             <div class="gallery-grid">
-                <img src="images/artsell.jpg" alt="Colored pencil artwork">
-                <img src="images/offline-art-class.jpg" alt="Child drawing in art class">
-                <img src="images/online-art-class.jpg" alt="Online art class sketching">
+                <img src="images/artsell.jpg" alt="Artwork by student">
+                <img src="images/offline-art-class.jpg" alt="Child drawing in class">
+                <img src="images/online-art-class.jpg" alt="Online art class session">
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials">
+            <h3>What Parents Say (Google Reviews)</h3>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    “My daughter’s confidence in drawing has improved tremendously.
+                    The one-to-one sessions are very effective.”
+                    <span>– Parent</span>
+                </div>
+
+                <div class="testimonial-card">
+                    “Excellent art teacher. Very patient and explains every step clearly.
+                    Highly recommended.”
+                    <span>– Parent</span>
+                </div>
+
+                <div class="testimonial-card">
+                    “My son enjoys every class and looks forward to learning more.
+                    Great experience overall.”
+                    <span>– Parent</span>
+                </div>
+            </div>
+
+            <div class="google-review">
+                <a href="https://g.page/r/CVf2UAMmKQb9EBM/review" target="_blank">
+                    ⭐ Read & Write Reviews on Google
+                </a>
             </div>
         </div>
 
         <footer>
             Helping kids build creativity and confidence through art 🎨
         </footer>
+
     </div>
 </body>
 </html>
